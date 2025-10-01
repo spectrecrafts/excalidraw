@@ -331,6 +331,7 @@ export interface AppState {
   currentItemOpacity: number;
   currentItemFontFamily: FontFamilyValues;
   currentItemFontSize: number;
+  currentItemFontStyle: "bold" | "italics" | "underline" | null;
   currentItemTextAlign: TextAlign;
   currentItemStartArrowhead: Arrowhead | null;
   currentItemEndArrowhead: Arrowhead | null;

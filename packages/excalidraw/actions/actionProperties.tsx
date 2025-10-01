@@ -270,6 +270,17 @@ const changeFontSize = (
     },
     true,
   );
+  //Change the font styles like bold, italic and underline
+  const changeFontStyle = (
+    elements: ExcalidrawElement,
+    appState: AppState,
+    app: AppClassProperties,
+    fallbackValue?: ExcalidrawTextElement["fontStyle"],
+  ) => {
+    console.log("elements", elements);
+    console.log("app", app);
+    console.log("fallbackValue,fallbackValue");
+  };
 
   // Update arrow elements after text elements have been updated
   getSelectedElements(elements, appState, {
@@ -279,6 +290,7 @@ const changeFontSize = (
       updateBoundElements(element, app.scene);
     }
   });
+  console.log(appState);
 
   return {
     elements: updatedElements,

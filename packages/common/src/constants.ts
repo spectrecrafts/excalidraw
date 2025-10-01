@@ -157,6 +157,12 @@ export const FONT_FAMILY = {
   Assistant: 10,
 };
 
+export enum FONT_STYLE {
+  italics,
+  underline,
+  bold,
+}
+
 // Segoe UI Emoji fails to properly fallback for some glyphs: ∞, ∫, ≠
 // so we need to have generic font fallback before it
 export const SANS_SERIF_GENERIC_FONT = "sans-serif";
@@ -231,6 +237,7 @@ export const DEFAULT_TEXT_ALIGN = "left";
 export const DEFAULT_VERTICAL_ALIGN = "top";
 export const DEFAULT_VERSION = "{version}";
 export const DEFAULT_TRANSFORM_HANDLE_SPACING = 2;
+export const DEFAULT_FONT_STYLE = null;
 
 export const SIDE_RESIZING_THRESHOLD = 2 * DEFAULT_TRANSFORM_HANDLE_SPACING;
 // a small epsilon to make side resizing always take precedence

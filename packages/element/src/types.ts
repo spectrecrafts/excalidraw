@@ -2,6 +2,7 @@ import type { LocalPoint, Radians } from "@excalidraw/math";
 
 import type {
   FONT_FAMILY,
+  FONT_STYLE,
   ROUNDNESS,
   TEXT_ALIGN,
   THEME,
@@ -237,6 +238,7 @@ export type ExcalidrawTextElement = _ExcalidrawElementBase &
     type: "text";
     fontSize: number;
     fontFamily: FontFamilyValues;
+    fontStyle: FONT_STYLE;
     text: string;
     textAlign: TextAlign;
     verticalAlign: VerticalAlign;
